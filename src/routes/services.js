@@ -13,7 +13,7 @@ router.post('/transfer',(req,res)=>{
   res.render('transfer',{message: 'Transfer Completed'});
 
 });
-.get('/payment',(req,res)=>
+router.get('/payment',(req,res)=>
 res.render('payment',{account:accounts.credit})
 );
 
